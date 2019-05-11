@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Jesse Heikkila <jesse@asyko.com>",
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.14",
     "@rooks/use-window-size": "^3.0.1",
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.14",
