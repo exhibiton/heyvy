@@ -34,13 +34,13 @@ export const StyledTitle = styled.p`
 export const StyledSmLogo = styled.img`
   position: absolute;
   left: 5%;
-  top: 93.8%;
+  top: 85%;
   width: 2.083vw;
 `
 
 export const StyledHalfCircle = styled.img`
   position: absolute;
   right: -14.8%;
-  top 76%;
+  top 30%;
   width: 13.403vw;
 `
