@@ -40,6 +40,11 @@ body {
   overflow-x: hidden;
 }
 
+input::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */

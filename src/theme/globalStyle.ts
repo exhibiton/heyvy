@@ -65,7 +65,7 @@ export const theme: DefaultTheme = {
       font-size: 12px;
       line-height: 20px;
       margin-bottom: 6px;
-      color: #ffffff
+      color: #ffffff;
       opacity: 0.6;
     `,
     buttontxt: css`
