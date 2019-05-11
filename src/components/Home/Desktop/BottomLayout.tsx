@@ -1,7 +1,17 @@
 import React from 'react'
-import { StyledContainer, StyledContent, StyledParent, StyledTitle } from './styles/bottomStyles'
+import {
+  StyledContainer,
+  StyledContent,
+  StyledParent,
+  StyledTitle,
+  StyledSmLogo,
+  StyledHalfCircle,
+} from './styles/bottomStyles'
 import Header from '../../Header/DesktopHeader'
 import ContactForm from '../../ContantForm'
+import SocialFooter from '../../SocialFooter'
+import heyvySm from '../../../images/heyvySm.svg'
+import halfCircle from '../../../images/halfCircle.svg'
 
 interface BottomLayoutProps {
   email?: string
@@ -9,6 +19,8 @@ interface BottomLayoutProps {
 
 const BottomLayout: React.SFC<BottomLayoutProps> = () => (
   <StyledParent>
+    <StyledSmLogo src={heyvySm} />
+    <StyledHalfCircle src={halfCircle} />
     <Header />
     <StyledContainer>
       <StyledContent>
@@ -16,6 +28,7 @@ const BottomLayout: React.SFC<BottomLayoutProps> = () => (
         <ContactForm />
       </StyledContent>
     </StyledContainer>
+    <SocialFooter />
   </StyledParent>
 )
 

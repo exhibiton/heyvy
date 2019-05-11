@@ -58,12 +58,15 @@ export const theme: DefaultTheme = {
       font-weight: 500;
       line-height: 18px;
       color: #ffffff;
+      opacity: 0.8;
     `,
     input: css`
       font-family: Inter;
       font-size: 12px;
       line-height: 20px;
-      color: #ffffff;
+      margin-bottom: 6px;
+      color: #ffffff
+      opacity: 0.6;
     `,
     buttontxt: css`
       font-family: Inter;

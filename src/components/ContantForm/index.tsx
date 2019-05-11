@@ -7,12 +7,16 @@ import 'react-toastify/dist/ReactToastify.css'
 interface State {
   email: string
   isSubmitting: boolean
+  message: string
+  name: string
 }
 
 class EmailInput extends React.Component<{}, State> {
   public state: State = {
     email: '',
     isSubmitting: false,
+    message: '',
+    name: '',
   }
 
   private handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
@@ -26,7 +30,7 @@ class EmailInput extends React.Component<{}, State> {
       url: 'http://localhost:3000/api/wait_list',
     })
       .then(() => {
-        toast.success('You have been added to the list', {
+        toast.success('Quote request sent', {
           position: 'top-right',
           autoClose: 5000,
           hideProgressBar: true,
@@ -37,7 +41,7 @@ class EmailInput extends React.Component<{}, State> {
         this.setState({ isSubmitting: false })
       })
       .catch(() => {
-        toast.error('Could not add you to the list', {
+        toast.error('Could not send quote request', {
           position: 'top-right',
           autoClose: 5000,
           hideProgressBar: true,
@@ -56,13 +60,27 @@ class EmailInput extends React.Component<{}, State> {
         <StyledForm onSubmit={this.handleSubmit}>
           <StyledInput
             type="text"
+            name="name"
+            placeholder="Name *"
+            value={this.state.name}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.setState({ email: e.target.value })}
+          />
+          <StyledInput
+            type="text"
             name="email"
-            placeholder="Enter email"
+            placeholder="Email address *"
             value={this.state.email}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.setState({ email: e.target.value })}
           />
+          <StyledInput
+            type="text"
+            name="message"
+            placeholder="Message *"
+            value={this.state.message}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.setState({ email: e.target.value })}
+          />
           <StyledSubmit type="submit" disabled={this.state.isSubmitting}>
-            Request Access
+            Request Quote
           </StyledSubmit>
         </StyledForm>
       </>
