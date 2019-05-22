@@ -3,6 +3,7 @@ import Layout from '../../Layout'
 import { renderMobileOnly } from 'components/resolutionRenderHOCs'
 import TopLayout from './TopLayout'
 import MidLayout from './MidLayout'
+import BottomLayout from './BottomLayout'
 
 class HomePageMobile extends React.PureComponent {
   public render() {
@@ -10,6 +11,7 @@ class HomePageMobile extends React.PureComponent {
       <Layout>
         <TopLayout />
         <MidLayout />
+        <BottomLayout />
       </Layout>
     )
   }

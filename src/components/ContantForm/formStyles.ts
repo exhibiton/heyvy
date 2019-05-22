@@ -11,7 +11,7 @@ export const StyledInput = styled.input`
 `
 
 export const StyledForm = styled.form`
-  width: 310px;
+  max-width: 310px;
   height: 310px;
   display: flex;
   flex-direction: column;
