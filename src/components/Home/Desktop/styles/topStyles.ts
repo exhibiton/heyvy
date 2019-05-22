@@ -32,7 +32,7 @@ export const StyledLgLogo = styled.img`
 export const StyledSmLogo = styled.img`
   position: absolute;
   left: 5%;
-  top: 28%;
+  top: 83%;
   width: 2.083vw;
 `
 

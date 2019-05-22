@@ -34,7 +34,7 @@ export const StyledTitle = styled.p`
 export const StyledSmLogo = styled.img`
   position: absolute;
   left: 5%;
-  top: 85%;
+  top: 83%;
   width: 2.083vw;
 `
 

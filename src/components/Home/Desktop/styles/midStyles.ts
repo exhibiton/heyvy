@@ -67,6 +67,6 @@ export const StyledCrosses = styled.img`
 export const StyledSmLogo = styled.img`
   position: absolute;
   left: 5%;
-  top: 61%;
+  top: 83%;
   width: 2.083vw;
 `
