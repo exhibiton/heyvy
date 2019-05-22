@@ -1,38 +1,36 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import AsykoLogo from '../../images/asyko-logo.svg'
+import HeyvyLogo from '../../images/heyvyLogo.svg'
 import styled from 'styled-components'
-
-const HeaderDiv = styled.div`
-  margin-top: 30px;
-  margin-bottom: 30px;
-`
 
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-top: 50px;
+`
+
+const EmailLink = styled.div`
+  ${({ theme }) => theme.textStyles.links};
+  text-decoration: none;
+  display: flex;
   align-items: center;
 `
 
 const StyledImg = styled.img`
-  width: 100px;
+  width: 72px;
 `
 
 const Header = () => (
   <StyledHeader>
-    <HeaderDiv>
-      <h1 style={{ margin: 0 }}>
-        <Link to="/">
-          <StyledImg src={AsykoLogo} />
-        </Link>
-      </h1>
-    </HeaderDiv>
+    <Link to="/">
+      <StyledImg src={HeyvyLogo} />
+    </Link>
+    <EmailLink>
+      <a href="mailto:hi@theheyvy.com">hi@theheyvy.com</a>
+    </EmailLink>
   </StyledHeader>
 )
-
-Header.defaultProps = {
-  siteTitle: '',
-}
 
 export default Header

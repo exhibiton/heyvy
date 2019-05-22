@@ -5,22 +5,29 @@ import MidLayout from './MidLayout'
 import BottomLayout from './BottomLayout'
 import { renderDesktopOnly } from 'components/resolutionRenderHOCs'
 import ReactFullpage from '@fullpage/react-fullpage'
+import styled from 'styled-components'
+
+const StyledWrapper = styled.div`
+  width: 80vw;
+`
 
 const HomePageDesktop = () => (
   <ReactFullpage
     render={() => (
       <ReactFullpage.Wrapper>
-        <Layout>
-          <div className="section">
-            <TopLayout />
-          </div>
-          <div className="section">
-            <MidLayout />
-          </div>
-          <div className="section">
-            <BottomLayout />
-          </div>
-        </Layout>
+        <StyledWrapper>
+          <Layout>
+            <div className="section">
+              <TopLayout />
+            </div>
+            <div className="section">
+              <MidLayout />
+            </div>
+            <div className="section">
+              <BottomLayout />
+            </div>
+          </Layout>
+        </StyledWrapper>
       </ReactFullpage.Wrapper>
     )}
   />

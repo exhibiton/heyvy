@@ -12,7 +12,6 @@ import { theme } from 'theme/globalStyle'
 
 const StyledMain = styled.main`
   position: relative;
-  width: 80vw;
 `
 
 const DesktopLayout = ({ children }: PropsWithChildren<{}>) => (

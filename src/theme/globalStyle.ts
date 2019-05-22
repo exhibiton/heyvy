@@ -83,7 +83,7 @@ export const theme: DefaultTheme = {
       `,
       regular: css`
         font-family: Inter;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
         color: #ffffff;
       `,
