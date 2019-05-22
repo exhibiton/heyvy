@@ -19,45 +19,11 @@ class EmailInput extends React.Component<{}, State> {
     name: '',
   }
 
-  private handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
-    event.preventDefault()
-    this.setState({ isSubmitting: true })
-    axios({
-      method: 'POST',
-      params: {
-        email: this.state.email,
-      },
-      url: 'http://localhost:3000/api/wait_list',
-    })
-      .then(() => {
-        toast.success('Quote request sent', {
-          position: 'top-right',
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: false,
-        })
-        this.setState({ isSubmitting: false })
-      })
-      .catch(() => {
-        toast.error('Could not send quote request', {
-          position: 'top-right',
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: false,
-        })
-        this.setState({ isSubmitting: false })
-      })
-  }
-
   public render() {
     return (
       <>
         <ToastContainer />
-        <StyledForm onSubmit={this.handleSubmit}>
+        <StyledForm name="contact" method="POST" data-netlify="true">
           <StyledInput
             type="text"
             name="name"
