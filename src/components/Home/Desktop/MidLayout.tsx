@@ -19,11 +19,7 @@ import VerticalDash from '../../../images/midRightBar.svg'
 import Crosses from '../../../images/sixCrosses.svg'
 import heyvySm from '../../../images/heyvySm.svg'
 
-interface MidLayoutProps {
-  email?: string
-}
-
-const MidLayout: React.SFC<MidLayoutProps> = () => (
+const MidLayout: React.SFC<{}> = () => (
   <>
     <StyledSmLogo src={heyvySm} />
     <StyledParent>
@@ -66,9 +62,5 @@ const MidLayout: React.SFC<MidLayoutProps> = () => (
     </StyledParent>
   </>
 )
-
-MidLayout.defaultProps = {
-  email: '',
-}
 
 export default MidLayout
