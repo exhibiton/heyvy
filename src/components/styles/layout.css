@@ -49,3 +49,21 @@ a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
 }
+
+.custom-input {
+  margin-top: 24px;
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+
+input[type='text'] {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  color: #ffffff;
+  opacity: 0.6;
+}
