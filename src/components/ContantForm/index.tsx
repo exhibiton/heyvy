@@ -1,4 +1,5 @@
 import React from 'react'
+import image from '../../../'
 class EmailInput extends React.PureComponent<{}, {}> {
   public render() {
     return (
@@ -7,7 +8,7 @@ class EmailInput extends React.PureComponent<{}, {}> {
         <input className="custom-input" type="text" name="email" placeholder="Email address *" />
         <input className="custom-input" type="text" name="message" placeholder="Message *" />
         <button className="submit-btn" type="submit">
-          Request Quote
+          Send Message
         </button>
       </form>
     )

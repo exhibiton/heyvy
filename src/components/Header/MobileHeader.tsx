@@ -28,7 +28,7 @@ const Header = () => (
       <StyledImg src={HeyvyLogo} />
     </Link>
     <EmailLink>
-      <a href="mailto:hi@theheyvy.com">hi@theheyvy.com</a>
+      <a href="mailto:hey@heyvy.co">hey@heyvy.co</a>
     </EmailLink>
   </StyledHeader>
 )
