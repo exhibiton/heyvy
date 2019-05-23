@@ -3,9 +3,9 @@ import { StyledLink, StyledParent } from './socialStyles'
 
 const SocialFooter: React.SFC<{}> = () => (
   <StyledParent>
-    <StyledLink href="https://linkedin.com">LinkedIn</StyledLink>
-    <StyledLink href="https://dribbble.com">Dribbble</StyledLink>
-    <StyledLink href="https://instagram.com">Instagram</StyledLink>
+    <StyledLink href="https://www.linkedin.com/in/cyrill-clyunev-0b4aa816/">LinkedIn</StyledLink>
+    <StyledLink href="https://dribbble.com/heyvy">Dribbble</StyledLink>
+    <StyledLink href="http://www.instagram.com/heyvy.co">Instagram</StyledLink>
   </StyledParent>
 )
 
